@@ -31,5 +31,7 @@ Flexbox + Zeilen Umbrüche können Probleme auslösen  auf verschiedenen Display
 Deswegen is flex : wrap evtl gefährlich 
 ... Grid bietet mehr Kontrolle sodass sich das layout nicht mit flex zerschiessen kann.
 
+Im gh-pages branch ist der fertig kompilierte Code für Seite.
+
 
 
