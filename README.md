@@ -1,11 +1,10 @@
 # Nachbau einer Landing Page
 
+nur Design Layout , ein paar Media queries , keine Unterseiten.
+
 ## Erstellt mit :
 
 CSS , SCSS
-
-- Layout mit Flexbox
-- ein paar Media queries hinzugefügt
 
 Workflow mit :
 
@@ -27,11 +26,8 @@ Man kann damit ein Starter Kit was auf dich selsbt abgestimtm ist erstellen.
 Abläufe wie Dateien Kopieren , ändern , verkleinern geht alles mit Gulp ... und man bracht dann nicht soviele  Pakete .. 
 Für das Responsive Design werde ich schauen das ich da erfahrung sammle ...
 
-Flexbox + Zeilen Umbrüche können Probleme auslösen  auf verschiedenen Display Größen und Vertical / Horizontal Ausrichtungen.
-Deswegen is flex : wrap evtl gefährlich 
-... Grid bietet mehr Kontrolle sodass sich das layout nicht mit Flex zerflexen kann.
 
-Im gh-pages branch ist der fertig kompilierte Code für Seite.
+Im gh-pages Branch ist der fertig kompilierte Code für Seite.
 
 
 
