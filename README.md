@@ -20,7 +20,7 @@ kombination aus Sass , BEM (Block Element Modifier).
 Sass Nesting + BEM gibt einen super Überblick über den CSS Code.
 aber es geht noch was in Sachen Workflow.
 
-Gulp.js werde ich ,mir anschauen...
+Gulp.js werde ich mir als nächstes anschauen...
 Man kann damit ein Starter Kit was auf dich selsbt abgestimtm ist erstellen.
 
 Abläufe wie Dateien Kopieren , ändern , verkleinern geht alles mit Gulp ... und man bracht dann nicht soviele  Pakete .. 
