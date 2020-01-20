@@ -24,15 +24,12 @@ aber es geht noch was in Sachen Workflow.
 Gulp.js werde ich ,mir anschauen...
 Man kann damit ein Starter Kit was auf dich selsbt abgestimtm ist erstellen.
 
-Abläufe wie Dateien Kopieren , ändern , verkleinern geht alles mit Gulp ... und man bracht dann nicht X verschiedene Pakete .. die man sich eh nicht merken kann vom namen.
-
-Für das Responsive Design werde ich schauen
-das ich da nochmehr erfahrung sammle ...
-
-Es gibt soviele Geräte das es manchmal
-nicht das perfekte design zu stande kommt.
+Abläufe wie Dateien Kopieren , ändern , verkleinern geht alles mit Gulp ... und man bracht dann nicht soviele  Pakete .. 
+Für das Responsive Design werde ich schauen das ich da erfahrung sammle ...
 
 Flexbox + Zeilen Umbrüche können Probleme auslösen  auf verschiedenen Display Größen und Vertical / Horizontal Ausrichtungen.
-... Grid bietet mehr Kontrolle.
+Deswegen is flex : wrap evtl gefährlich 
+... Grid bietet mehr Kontrolle sodass sich das layout nicht mit flex zerschiessen kann.
+
 
 
