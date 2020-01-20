@@ -18,8 +18,8 @@ Workflow mit :
 
 Bin erstmal zufrieden mit der
 kombination aus Sass , BEM (Block Element Modifier).
-Sass Nesting + BEM gibt einen Super überblick.
-aber da geht noch einiges in Sachen Workflow.
+Sass Nesting + BEM gibt einen super Überblick über den CSS Code.
+aber es geht noch was in Sachen Workflow.
 
 Gulp.js werde ich ,mir anschauen...
 Man kann damit ein Starter Kit was auf dich selsbt abgestimtm ist erstellen.
@@ -32,7 +32,7 @@ das ich da nochmehr erfahrung sammle ...
 Es gibt soviele Geräte das es manchmal
 nicht das perfekte design zu stande kommt.
 
-Flexbox + Zeilen Umbrüche sind ideal auf verschiedenen Display Größen und Vertical / Horizontal Ausrichtungen.
+Flexbox + Zeilen Umbrüche können Probleme auslösen  auf verschiedenen Display Größen und Vertical / Horizontal Ausrichtungen.
 ... Grid bietet mehr Kontrolle.
 
-Weiter gehts in den nächsten Design Projekten ;)...
+
