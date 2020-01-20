@@ -1,0 +1,341 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//////////////////////////////
+// ANIMATION
+
+@keyframes example {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 1rem;
+  }
+}
+
+//////////////////////////////
+// LOGO
+
+//////////////////////////////
+// HEADER 2 SECTION
+
+.header__mail::before {
+  background-image: url("/img/adresse.png");
+
+  left: 0px;
+  color: rgb(100, 255, 218);
+  font-size: 14px;
+  line-height: 12px;
+}
+
+.header__adresse::before {
+  background-image: url("../img/adresse.png");
+  background-size: 1.5rem 1.5rem;
+  height: 2rem;
+}
+
+.header {
+  background-color: #ee7c60;
+  font-weight: bold;
+
+  @include flex-center();
+  color: white;
+
+  &__logo {
+    position: absolute;
+    z-index: 2;
+
+    top: 9rem;
+    height: 12rem;
+    margin-left: 3rem;
+  }
+
+  > * {
+    padding-right: 2rem;
+  }
+
+  &__adresse {
+    margin-left: 2.4rem;
+  }
+
+  &__adresse::before {
+    content: " ";
+    background-image: url("../img/adresse.png");
+    background-size: 1.5rem 1.5rem;
+    height: 2rem;
+  }
+
+  &__telefon::before {
+    background-image: url("../img/telefon.png");
+    background-size: 1.5rem 1.5rem;
+  }
+
+  &__mail p::before {
+    background-image: url("../img/mail.png");
+    background-size: 1.5rem 1.5rem;
+  }
+}
+
+.header2 {
+  position: sticky;
+  top: 0;
+  font-weight: bold;
+
+  &__list {
+    padding: 2rem;
+    list-style: none;
+    background-color: white;
+
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    &__item {
+      font-size: 2rem;
+    }
+
+    &__item:not(:last-child):after {
+      content: "·";
+      font-size: 2rem;
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+
+    &__item:hover {
+      color: #ee7c60;
+    }
+  }
+}
+
+.container {
+  background-image: url("../img/bg.jpg");
+  background-size: cover; // https://www.sitepoint.com/css3-background-size-property/
+}
+
+// CONTENT SECTION
+
+.content {
+  min-height: 800px;
+  height: 100vh;
+  margin: 10%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-bottom: 0;
+  margin-top: 0;
+
+  flex-wrap: wrap;
+
+  // https://stackoverflow.com/questions/40141163/make-flex-items-take-content-width-not-width-of-parent-container
+  // align items flex start to not take full widht
+
+  &__first-card {
+    align-self: center;
+    max-width: 66rem;
+    margin: 2rem auto;
+    padding: 2rem;
+
+    color: #4d8641;
+
+    background-color: white;
+
+    &__title {
+      font-size: 1.7rem;
+      border-bottom: 1px solid wheat;
+      font-weight: bold;
+
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    color: #4d8641;
+
+    margin: 3rem;
+    padding: 2rem;
+    background-color: white;
+    &__title {
+      border-bottom: 1px solid wheat;
+      font-weight: bold;
+
+      padding-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+    &__text {
+      padding-top: 1.5rem;
+      font-size: 1.6rem;
+    }
+
+    &__image {
+      // https://css-tricks.com/almanac/properties/o/object-fit/
+      object-fit: cover;
+      max-height: 30rem;
+      background-color: white;
+    }
+
+    /*     &:not(:first-child) {
+      width: 35%;
+    }
+    &:first-child {
+      width: 35%;
+    } */
+  }
+  &__card:hover {
+    box-shadow: #cecece 0px 4px 0.9em;
+    position: relative;
+    animation: example 0.5s forwards;
+  }
+}
+
+// FOOTER SECTION
+
+.footer {
+  &__list {
+    padding-top: 1rem;
+    @include flex-center();
+    background-color: #ee7c60;
+    list-style: none;
+    &__item {
+      font-size: 1.6rem;
+      color: white;
+    }
+
+    &__item:not(:last-child):after {
+      content: "·";
+      font-size: 1rem;
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  }
+
+  &__list2 {
+    padding: 1rem;
+    @include flex-center();
+    background-color: #ee7c60;
+    list-style: none;
+
+    &__item {
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    &__item:not(:last-child):after {
+      content: "·";
+      font-size: 2rem;
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.author {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.credit-github {
+  display: block;
+  margin: auto;
+  width: 3rem;
+  fill: black;
+}
+
+/////////////////////////////////////////////////////////////////////
+// MEDIA QURIES
+
+@media only screen and(max-width: 1000px) {
+  .header {
+    &__logo {
+      display: none;
+    }
+  }
+
+  .container {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    margin: 1rem;
+  }
+}
+
+@media only screen and(max-width: 730px) {
+  .header {
+    flex-direction: column;
+    &__adresse {
+      margin-left: 0;
+    }
+
+    & > * {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    &__logo {
+      display: none;
+    }
+  }
+
+  .header2 {
+    position: static;
+    &__list {
+      flex-direction: column;
+      align-items: center;
+
+      &__item:not(:last-child):after {
+        content: none;
+      }
+
+      &__item::last-child:after {
+        content: none;
+        // LINK reset pseuddo element https://stackoverflow.com/questions/12309086/undo-pseudo-element-before-and-after-rules
+      }
+    }
+  }
+
+  .footer {
+    &__list {
+      flex-direction: column;
+      padding: 1rem;
+
+      &__item {
+        padding-bottom: 1rem;
+      }
+      &__item:not(:last-child):after {
+        content: none;
+      }
+
+      &__item::last-child:after {
+        content: none;
+        // LINK reset pseuddo element https://stackoverflow.com/questions/12309086/undo-pseudo-element-before-and-after-rules
+      }
+    }
+
+    &__list2 {
+      &__item {
+        font-size: 1.3rem;
+        color: black;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 665px) {
+  .content {
+    height: 150%;
+    flex-wrap: unset;
+    align-items: center;
+
+    &__card {
+      min-width: 100%;
+    }
+  }
+}
