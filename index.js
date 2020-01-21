@@ -1,10 +1,3 @@
-console.log("init");
-
-document.getElementById("listener").addEventListener("click", function() {
-  console.log("nice");
-  myFunction();
-});
-
 function myFunction() {
   // Get the snackbar DIV
   var x = document.getElementById("snackbar");
