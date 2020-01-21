@@ -1,10 +1,4 @@
-console.log("init");
-
-document.getElementById("listener").addEventListener("click", function() {
-  console.log("nice");
-  myFunction();
-});
-
+console.log("init js");
 function myFunction() {
   // Get the snackbar DIV
   var x = document.getElementById("snackbar");
@@ -14,6 +8,9 @@ function myFunction() {
 
   // After 3 seconds, remove the show class from DIV
   setTimeout(function() {
+    console.log("click");
     x.className = x.className.replace("show", "");
   }, 3000);
 }
+
+document.body.addEventListener("click", myFunction);
