@@ -4,7 +4,7 @@ nur Design Layout , ein paar Media queries , keine Unterseiten.
 
 ## Erstellt mit :
 
-CSS , SCSS
+CSS , SCSS , BEM
 
 Workflow mit :
 
